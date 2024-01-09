@@ -1,118 +1,101 @@
 <!DOCTYPE html>
 <html lang="en-gb">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Work Day Scheduler</title>
-  </head>
 
-  <body>
-    <header>
-      <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
-    </header>
-    <div class="container">
-      <!-- Rest of your planner content goes here -->
-      
-      <div id="9" class="row time-block">
-        <div class="col-2 col-md-1 hour text-center py-3 time-title">9AM</div>
-        <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
-        <button class="btn saveBtn col-2 col-md-1" aria-label="save">
-          <i class="fas fa-save" aria-hidden="true"></i>
-        </button>
-      </div>
-      <div id="10" class="row time-block">
-        <div class="col-2 col-md-1 hour text-center py-3">10AM</div>
-        <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
-        <button class="btn saveBtn col-2 col-md-1" aria-label="save">
-          <i class="fas fa-save" aria-hidden="true"></i>
-        </button>
-      </div>
-    <div id="11" class="row time-block">
-      <div class="col-2 col-md-1 hour text-center py-3">11AM</div>
-      <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
-      <button class="btn saveBtn col-2 col-md-1" aria-label="save">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>Work Day Scheduler</title>
+</head>
+
+<body>
+  <header>
+    <h1 class="display-3">Work Day Scheduler</h1>
+    <p class="lead">A simple calendar app for scheduling your work day</p>
+    <p id="currentDay" class="lead"></p>
+  </header>
+  <div class="container">
+    <div id="9" class="row time-block">
+      <div class="col-2 col-md-1 hour text-center py-3 ">9AM</div>
+      <textarea class="col-8 col-md-10 description" rows="3" id="9-textarea"> </textarea>
+      <button class="btn saveBtn col-2 col-md-1" aria-label="save" id="9">
         <i class="fas fa-save" aria-hidden="true"></i>
       </button>
-  </div>
-  <div id="12" class="row time-block">
-    <div class="col-2 col-md-1 hour text-center py-3">12PM</div>
-    <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
-    <button class="btn saveBtn col-2 col-md-1" aria-label="save">
-      <i class="fas fa-save" aria-hidden="true"></i>
-    </button>
-  </div>
-<div id="13" class="row time-block">
-  <div class="col-2 col-md-1 hour text-center py-3">1PM</div>
-  <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
-  <button class="btn saveBtn col-2 col-md-1" aria-label="save">
-    <i class="fas fa-save" aria-hidden="true"></i>
-  </button>
-</div>
-<div id="14" class="row time-block">
-  <div class="col-2 col-md-1 hour text-center py-3">2PM</div>
-  <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
-  <button class="btn saveBtn col-2 col-md-1" aria-label="save">
-    <i class="fas fa-save" aria-hidden="true"></i>
-  </button>
-</div>
-<div id="15" class="row time-block">
-  <div class="col-2 col-md-1 hour text-center py-3">3PM</div>
-  <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
-  <button class="btn saveBtn col-2 col-md-1" aria-label="save">
-    <i class="fas fa-save" aria-hidden="true"></i>
-  </button>
-</div>
-<div id="16" class="row time-block">
-  <div class="col-2 col-md-1 hour text-center py-3">4PM</div>
-  <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
-  <button class="btn saveBtn col-2 col-md-1" aria-label="save">
-    <i class="fas fa-save" aria-hidden="true"></i>
-  </button>
-</div>
-<div id="17" class="row time-block">
-  <div class="col-2 col-md-1 hour text-center py-3">5PM</div>
-  <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
-  <button class="btn saveBtn col-2 col-md-1" aria-label="save">
-    <i class="fas fa-save" aria-hidden="true"></i>
-  </button>
-</div>
-<div id="18" class="row time-block">
-  <div class="col-2 col-md-1 hour text-center py-3">6PM</div>
-  <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
-  <button class="btn saveBtn col-2 col-md-1" aria-label="save">
-    <i class="fas fa-save" aria-hidden="true"></i>
-  </button>
-</div>
-
-
-    <!-- Timeblocks go here -->
-
-
-    <!-- Present timeblocks for standard business hours when the user scrolls down. -->
+    </div>
+    <div id="10" class="row time-block">
+      <div class="col-2 col-md-1 hour text-center py-3 ">10AM</div>
+      <textarea class="col-8 col-md-10 description" rows="3" id="10-textarea"> </textarea>
+      <button class="btn saveBtn col-2 col-md-1" aria-label="save" id="10">
+        <i class="fas fa-save" aria-hidden="true"></i>
+      </button>
+    </div>
+    <div id="11" class="row time-block">
+      <div class="col-2 col-md-1 hour text-center py-3 ">11AM</div>
+      <textarea class="col-8 col-md-10 description" rows="3" id="11-textarea"> </textarea>
+      <button class="btn saveBtn col-2 col-md-1" aria-label="save" id="11">
+        <i class="fas fa-save" aria-hidden="true"></i>
+      </button>
+    </div>
+    <div id="12" class="row time-block">
+      <div class="col-2 col-md-1 hour text-center py-3">12PM</div>
+      <textarea class="col-8 col-md-10 description" rows="3" id="12-textarea"></textarea>
+      <button class="btn saveBtn col-2 col-md-1" aria-label="save" id="12">
+        <i class="fas fa-save" aria-hidden="true"></i>
+      </button>
+    </div>
+    <div id="13" class="row time-block">
+      <div class="col-2 col-md-1 hour text-center py-3">1PM</div>
+      <textarea class="col-8 col-md-10 description" rows="3" id="13-textarea"></textarea>
+      <button class="btn saveBtn col-2 col-md-1" aria-label="save" id="13">
+        <i class="fas fa-save" aria-hidden="true"></i>
+      </button>
+    </div>
+    <div id="14" class="row time-block">
+      <div class="col-2 col-md-1 hour text-center py-3">2PM</div>
+      <textarea class="col-8 col-md-10 description" rows="3" id="14-textarea"></textarea>
+      <button class="btn saveBtn col-2 col-md-1" aria-label="save" id="14">
+        <i class="fas fa-save" aria-hidden="true"></i>
+      </button>
+    </div>
+    <div id="15" class="row time-block">
+      <div class="col-2 col-md-1 hour text-center py-3">3PM</div>
+      <textarea class="col-8 col-md-10 description" rows="3" id="15-textarea"></textarea>
+      <button class="btn saveBtn col-2 col-md-1" aria-label="save" id="15">
+        <i class="fas fa-save" aria-hidden="true"></i>
+      </button>
+    </div>
+    <div id="16" class="row time-block">
+      <div class="col-2 col-md-1 hour text-center py-3">4PM</div>
+      <textarea class="col-8 col-md-10 description" rows="3" id="16-textarea"></textarea>
+      <button class="btn saveBtn col-2 col-md-1" aria-label="save" id="16">
+        <i class="fas fa-save" aria-hidden="true"></i>
+      </button>
+    </div>
+    <div id="17" class="row time-block">
+      <div class="col-2 col-md-1 hour text-center py-3">5PM</div>
+      <textarea class="col-8 col-md-10 description" rows="3" id="17-textarea"></textarea>
+      <button class="btn saveBtn col-2 col-md-1" aria-label="save" id="17">
+        <i class="fas fa-save" aria-hidden="true"></i>
+      </button>
+    </div>
+    <div id="18" class="row time-block">
+      <div class="col-2 col-md-1 hour text-center py-3">6PM</div>
+      <textarea class="col-8 col-md-10 description" rows="3" id="18-textarea"></textarea>
+      <button class="btn saveBtn col-2 col-md-1" aria-label="save" id="18">
+        <i class="fas fa-save" aria-hidden="true"></i>
+      </button>
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
     <script src="./assets/js/script.js"></script>
 
-  </body>
+</body>
+
 </html>
